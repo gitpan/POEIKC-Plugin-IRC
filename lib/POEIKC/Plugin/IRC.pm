@@ -2,7 +2,7 @@ package POEIKC::Plugin::IRC;
 
 use strict;
 use 5.008_001;
-our $VERSION = '0.00_01';
+our $VERSION = '0.00_02';
 
 use Data::Dumper;
 use Class::Inspector;
@@ -83,7 +83,7 @@ sub message_respond {
 	POEIKC::Daemon::Utility::_DEBUG_log($param);
 
 	$kernel->yield(privmsg_notice=>$param);
-	$kernel->post( IKC => post => $rsvp, 0 );
+	$kernel->post( IKC => post => $rsvp, 1 );
 }
 
 sub status_respond {

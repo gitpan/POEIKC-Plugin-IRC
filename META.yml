@@ -3,9 +3,12 @@ abstract: 'PoCo-IKC and PoCo-IRC based irc bot.'
 author:
   - 'Yuji Suzuki <yujisuzuki@mail.arbolbell.jp>'
 build_requires:
+  ExtUtils::MakeMaker: 6.42
   Test::More: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: 'Module::Install version 0.77'
+generated_by: 'Module::Install version 0.91'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,6 +22,7 @@ recommends:
   POEIKC: 0
 requires:
   Class::Inspector: 0
+  Filter::Util::Call: 0
   POE: 0
   POE::Component::IKC::ClientLite: 0
   POE::Component::IRC: 0
@@ -26,4 +30,4 @@ requires:
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.00_01
+version: 0.00_02

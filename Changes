@@ -1,5 +1,11 @@
 Revision history for Perl extension POEIKC::Plugin::IRC
 
-0.00_00  Thu Mar  5 2009
+0.00_02  Wed Oct 21 2009
+        - POEIKC::Plugin::IRC::ClientLite
+          Addition of simple interface
+
 0.00_01  Fri Mar  6 2009
         - developer release
+
+
+
